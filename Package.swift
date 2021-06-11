@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "dvclient",
-            targets: ["dvclient_arm64"]),
+            targets: ["dvclient"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -17,7 +17,7 @@ let package = Package(
         //https://github.com/dvpweb-client-projects/SPMDolbySDK/raw/main/frameworks/dvclient.xcframework.zip
     ],
     targets: [
-        .binaryTarget(name: "dvclient_arm64", path: "source/dvclient_arm64.xcframework")
+        .binaryTarget(name: "dvclient", path: "source/dvclient_arm64.framework")
     
     ]
 )
