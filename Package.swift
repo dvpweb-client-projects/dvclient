@@ -17,7 +17,7 @@ let package = Package(
         //https://github.com/dvpweb-client-projects/SPMDolbySDK/raw/main/frameworks/dvclient.xcframework.zip
     ],
     targets: [
-        .binaryTarget(name: "dvclient", path: "source/dvclient.xcframework")
+        .binaryTarget(name: "dvclient", url: "https://github.com/dvpweb-client-projects/SPMDolbySDK/raw/main/frameworks/dvclient.xcframework.zip", checksum: "")
     
     ]
 )
